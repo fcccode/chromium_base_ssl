@@ -15,8 +15,6 @@ ciopfs
 /win_toolchain.json
 /util/support
 /x64/
-/linux/debian_*-sysroot/
-/linux/ubuntu_*-sysroot/
 /ios_files
 /mac_files
 
