@@ -109,7 +109,9 @@ if (is_win && !is_msan && current_cpu != "arm64") {
 component("boringssl") {
   sources = all_sources
   public = all_headers
-  friend = [ ":*" ]
+  if(!is_mac) {
+    friend = [ ":*" ]
+  }
   deps = [
     ":boringssl_asm",
     "//third_party/boringssl/src/third_party/fiat:fiat_license",
